@@ -1,0 +1,143 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  width: 100%;
+  height: 120%;
+}
+
+html {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 60px;
+}
+
+.MainContent {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(201, 198, 198);
+  border-radius: 5px;
+  height: 500px;
+  width: 850px;
+  margin: 20px auto; /* Updated margin to auto for centering */
+  padding: 12px;
+  display: flex; /* Reverted back to display flex */
+  flex-direction: column;
+}
+
+.Appfooter {
+  text-align: center;
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: #ffaaa5;
+  font-weight: bold;
+}
+
+#city {
+  font-size: 35px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  color: grey;
+}
+
+p strong {
+  color: #ffaaa5;
+}
+
+.weatherAppData {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(230, 226, 226);
+}
+
+.searchInput {
+  display: flex;
+  justify-content: flex-start;
+  width: 500px;
+  height: 35px;
+  margin: -15px 5px;
+  background-color: #f5f4e8;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.search {
+  height: 35px;
+  width: 70px;
+  background-color: #fad3cf;
+  border: 1px solid #fad3cf;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(201, 198, 198);
+  font-family: "Didact Gothic", sans-serif;
+  margin: -15px 5px;
+}
+
+.temp {
+  display: relative;
+  top: -20px;
+  font-size: 60px;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+#icon {
+  font-size: 30px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.unit {
+  position: relative;
+  top: -30px;
+  font-size: 20px;
+  color: #000;
+}
+
+.weather-forecast {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.weather-forecast-date {
+  font-size: 25px;
+}
+
+.weather-forecast-temperature {
+  font-size: 18px;
+}
+
+.min-temp {
+  color: #ffaaa5;
+}
+
+.WeatherData {
+  display: relative;
+  right: -20px;
+}
+
+#currentTemperature {
+  display: flex;
+}
+
+#searchForm {
+  display: flex;
+  margin: 10px auto; /* Updated margin to auto for centering */
+  padding: 30px;
+}
