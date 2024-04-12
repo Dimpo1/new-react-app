@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Header(props) {
   let [ready, setReady] = useState(false);
@@ -12,6 +13,7 @@ export default function Header(props) {
     setTemperatureData({
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      coordinates: response.data.coord,
       wind: response.data.wind.speed,
       city: response.data.name,
       description: response.data.weather[0].description,
@@ -58,6 +60,7 @@ export default function Header(props) {
         </div>
         <div>
           <WeatherData data={temperatureData} />{" "}
+          <WeatherForecast coordinates={temperatureData.coordinates} />
           {/* changed 'info' to 'data' */}
         </div>
       </div>
