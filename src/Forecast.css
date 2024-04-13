@@ -1,4 +1,7 @@
 .WeatherForecast {
-  display: relative;
-  top: 100px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.ForecastMin {
+  opacity: 0.5;
 }

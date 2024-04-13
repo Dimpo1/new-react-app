@@ -8,7 +8,7 @@ export default function WeatherData(props) {
     <div className="container">
       <div className="WeatherData">
         <div className="row">
-          <div className="col-8 text-start">
+          <div className="col-8 text-start mt-2">
             <div id="city">{props.data.city}</div>
             <p>
               <span id="dateTime">

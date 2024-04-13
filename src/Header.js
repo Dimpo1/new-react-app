@@ -67,6 +67,6 @@ export default function Header(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return <div className="loader"></div>;
   }
 }
